@@ -7,14 +7,12 @@ import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 /**
  * @Author ZhangYiBo
  * @Date 2022-08-21 18:23
  * @Desc 幂等插件进行初始化
  */
-@Configuration
 @AutoConfigureAfter(RedisAutoConfiguration.class)
 public class IdempotentAutoConfiguration {
 
